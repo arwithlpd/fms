@@ -1,17 +1,31 @@
-import { Typography } from '@mui/material'
+import MenuIcon from '@mui/icons-material/Menu'
+import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material'
 
 function App() {
   return (
-    <div className='App'>
-      <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, facere!</Typography>
-      <h2>
-        <i className='fab fa-4x fa-js'> </i>
-        <i className='fab fa-4x fa-react'> </i>
-        <i className='fab fa-4x fa-angular'> </i>
-        <i className='fab fa-4x fa-vuejs'> </i>
-        <i className='fab fa-4x fa-node'> </i>
-      </h2>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position='static'>
+        <Toolbar>
+          <IconButton
+            size='large'
+            edge='start'
+            color='inherit'
+            aria-label='menu'
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography
+            variant='h6'
+            component='div'
+            sx={{ flexGrow: 1 }}
+          >
+            News
+          </Typography>
+          <Button color='inherit'>Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   )
 }
 
