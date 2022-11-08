@@ -3,10 +3,7 @@ import './App.css'
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <i class='fa-solid fa-3x fa-user'></i>
-        <i class='fa-brands fa-3x fa-facebook'></i>
-      </header>
+      <header className='App-header'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, laboriosam!</header>
     </div>
   )
 }
